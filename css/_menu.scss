@@ -1,0 +1,56 @@
+#nav{
+  display: flex;
+  flex-direction: column;
+
+}
+#menuIcone{
+  justify-content: flex-end;
+  width: 60%;
+  margin: 20px 0;
+  img{
+    width: 100%;
+  }
+}
+.IconLogo{
+  width: 100%;
+  height: 100px;
+}
+
+.Icon {
+  margin: 0;
+  padding: 0;
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+
+  overflow: hidden;
+}
+
+#menuText{
+  font-size: 2em;
+  background-color:$bgcMenu;
+
+
+  a{
+    color: $colorMenuText;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 1.5em;
+    line-height: 1.5em;
+    &:hover{
+      background-color: darken($bgcMenu, 20%);
+      color: red;
+    }
+    .texteMenu{
+      width: 50px;
+      visibility: visible;
+    }
+    .Icon{
+      visibility: visible;
+    }
+
+  }
+}

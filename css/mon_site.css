@@ -1,0 +1,222 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+li,
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  width: 0;
+  height: 0;
+}
+
+.entete {
+  width: 100%;
+}
+
+.entete img {
+  width: 100%;
+}
+
+.photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page {
+  margin: auto;
+  background-color: #ffa625;
+}
+
+.page h1 {
+  color: #c2c2c2;
+}
+
+h1 {
+  text-align: center;
+  line-height: 100px;
+}
+
+.logo {
+  color: #fcb731;
+  text-align: center;
+}
+
+.logo .titreLogo {
+  font-size: 3em;
+}
+
+.logo .sousTitre {
+  font-size: 2em;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.accueil {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+}
+
+.picto {
+  width: 300px;
+  text-align: center;
+}
+
+.picto img {
+  width: 60%;
+}
+
+.coop {
+  color: #c3a575;
+}
+
+.installation {
+  color: #b3d143;
+}
+
+.production {
+  color: #fcb731;
+}
+
+.capital {
+  color: #00afec;
+}
+
+.articlePresentation {
+  text-align: center;
+  color: #6d6f71;
+}
+
+.article {
+  text-align: center;
+}
+
+.photoArticle {
+  width: 100%;
+  text-align: center;
+}
+
+.photoArticle img {
+  width: 100%;
+}
+
+.actualite {
+  background-color: #fcb731;
+  color: white;
+}
+
+.demarche {
+  background-color: #b3d143;
+  color: #6d6f71;
+}
+
+.installation {
+  color: #6d6f71;
+}
+
+.temoignage {
+  background-color: #e8ddca;
+  color: #6d6f71;
+}
+
+.point {
+  background-image: url("../svg/points.svg");
+  fill: currentColor;
+  background-blend-mode: lighten;
+}
+
+.footer {
+  background-color: #6d6f71;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#menuIcone {
+  justify-content: flex-end;
+  width: 60%;
+  margin: 20px 0;
+}
+
+#menuIcone img {
+  width: 100%;
+}
+
+.IconLogo {
+  width: 100%;
+  height: 100px;
+}
+
+.Icon {
+  margin: 0;
+  padding: 0;
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+  overflow: hidden;
+}
+
+#menuText {
+  font-size: 2em;
+  background-color: #a7cb18;
+}
+
+#menuText a {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+#menuText a:hover {
+  background-color: #5c700d;
+  color: red;
+}
+
+#menuText a .texteMenu {
+  width: 50px;
+  visibility: visible;
+}
+
+#menuText a .Icon {
+  visibility: visible;
+}
+
+@media screen and (min-width: 992px) {
+  #menuIcone {
+    display: none;
+    width: 500px;
+  }
+  #menuText {
+    width: 80%;
+  }
+  #menuText ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #menuText ul li {
+    list-style: none;
+  }
+  #menuText ul .texteMenu {
+    visibility: visible;
+  }
+  #menuText ul .Icon {
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=mon_site.css.map */
